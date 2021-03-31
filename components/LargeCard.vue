@@ -1,14 +1,14 @@
 <template>
     <div class="card">
-        <img src="" alt="" class="image">
-        <h3 class="header">{{ cardData.title }}</h3>
-        <p class="snippet">{{ cardData.snippet }}</p>
+        <img :src="require(`@/assets/images/${card.image}`)" alt="fe" class="image">
+        <h3 class="header">{{ card.title }}</h3>
+        <p class="snippet">{{ card.snippet }}</p>
     </div>
 </template>
 
 <script>
     export default {
-        props: ['cardData'],
+        props: ['card'],
     }
 </script>
 

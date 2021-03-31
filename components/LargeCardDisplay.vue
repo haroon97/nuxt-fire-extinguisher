@@ -7,7 +7,7 @@
             {{ cardsSection.snippet }}
         </p>
         <div class="cards-container">
-            <LargeCard :cardData="cardsSection.cards" />
+            <LargeCard v-for="card in cardsSection.cards" :key="card.id" :card="card"/>
         </div>
     </div>
 </template>
