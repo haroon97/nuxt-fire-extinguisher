@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <Nav />
-    <Nuxt />
+  <div class="container">
+    <PageNotFound />
   </div>
 </template>
 
